@@ -5,7 +5,8 @@ jobs:
       - image:  stupidkidaf/kernel_docker:v1
 
     resource_class: large
-
+        commands:
+      - sh ./build.sh
     steps:
       - checkout
       - run: sudo apt install python
